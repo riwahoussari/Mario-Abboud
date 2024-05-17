@@ -2317,7 +2317,6 @@ section#title::after{
     }
 
     #about-page{
-        transform: translateY(-8%);
         .nav{
             width: 90%;
             margin-inline: auto;
@@ -2348,6 +2347,7 @@ section#title::after{
         }
     }
     #contact-page{
+        transform: translateY(-3%);
         .container{
             form{
                 width: 90%;
@@ -2373,7 +2373,6 @@ section#title::after{
     }
 
     #faqs-page{
-        transform: translateY(-8%);
 
         .container{border-block-width: 0.5px;}
 
