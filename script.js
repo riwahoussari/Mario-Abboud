@@ -18,3 +18,38 @@ document.addEventListener('click', e => {
 })
 
 
+// JavaScript to handle touch events and simulate hover
+const hoverables = document.querySelectorAll('.hoverable');
+
+hoverables.forEach(item => {
+    item.addEventListener('touchstart', function () {
+        item.classList.add('hovering');
+    });
+
+    item.addEventListener('touchend', function () {
+        setInterval(() => {
+            item.classList.remove('hovering');
+        }, 1);
+    });
+    
+    item.addEventListener('touchcancel', function () {
+        setInterval(() => {
+            item.classList.remove('hovering');
+        }, 1);
+    });
+
+    item.addEventListener('mouseover', function () {
+        item.classList.add('hovering');
+    });
+
+    item.addEventListener('mouseenter', function () {
+        item.classList.add('hovering');
+    });
+
+    item.addEventListener('mouseleave', function () {
+        item.classList.remove('hovering');
+    });
+
+});
+
+

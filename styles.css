@@ -69,6 +69,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root{
     --white: #fff;
     --black: #000;
@@ -313,7 +314,7 @@ button{
         fill: var(--btn-color);
         transition: all 200ms ease-in-out;
     }
-}button:hover{
+}button.hovering{
     --btn-color: var(--navy-blue) !important;
     --btn-bg-color: var(--white) !important;
     --btn-border-color: var(--white) !important;
@@ -459,7 +460,7 @@ header{
             font-size: var(--f-nav-item);
             text-decoration: none;
         }
-        ul .nav-item:hover{
+        ul .nav-item.hovering{
             opacity: 1;
         }ul .nav-item.active{
             opacity: 1;
@@ -514,7 +515,7 @@ footer{
                   color: var(--white);  
                   text-decoration: none;
                 }
-                li:hover a{
+                li.hovering a{
                     opacity: 1;
                     text-decoration: underline;
                 }
@@ -557,7 +558,7 @@ footer{
                         resize: none;
                         width: 100%;
 
-                    }input:hover, textarea:hover{
+                    }input.hovering, textarea.hovering{
                         border-color: rgba(255, 255, 255, 0.7);
                         cursor: pointer;
                     }input:focus, textarea:focus{
@@ -631,14 +632,14 @@ footer{
         svg{
             width: var(--w-logo);
         }
-        svg.facebook:hover{
+        svg.facebook.hovering{
             fill: var(--white) ;
         }
         svg.facebook{
             fill: #1877f2;
         }
 
-        svg.instagram:hover{
+        svg.instagram.hovering{
             .st0{fill: var(--white)}
             .st1{fill: var(--navy-blue)}
         }
@@ -647,7 +648,7 @@ footer{
             .st1{fill:var(--white);}
         }
 
-        svg.whatsapp:hover{
+        svg.whatsapp.hovering{
             .green{fill: var(--white)}
             .white{fill: var(--white)}
             .blue{fill: var(--navy-blue)}
@@ -657,7 +658,7 @@ footer{
             .white{fill: var(--white)}
         }
 
-        svg.linkedin:hover{
+        svg.linkedin.hovering{
             circle{fill: var(--white)}
             g g{
                 rect, path, circle{
@@ -873,7 +874,7 @@ footer{
                 opacity: 0.8;
                 line-height: 125%;
     
-                a:hover{
+                a.hovering{
                     text-decoration: none;
                     color: white;
                     opacity: 1;
@@ -951,7 +952,7 @@ footer{
             background-color: transparent;
             border: none;
             padding-inline: 0;
-        }button:hover{
+        }button.hovering{
             background-color: transparent;
             color: white;
             text-decoration: underline;
@@ -1189,7 +1190,7 @@ section#title::after{
             user-select: none;
             color: var(--white);
         }
-        a:hover{
+        a.hovering{
             opacity: 0.8;
             cursor: pointer;
         }a.active{
@@ -1353,14 +1354,14 @@ section#title::after{
             svg{
                 width: var(--w-logo);
             }
-            svg.facebook:hover{
+            svg.facebook.hovering{
                 fill: var(--white) ;
             }
             svg.facebook{
                 fill: #1877f2;
             }
     
-            svg.instagram:hover{
+            svg.instagram.hovering{
                 .st0{fill: var(--white)}
                 .st1{fill: var(--navy-blue)}
             }
@@ -1369,7 +1370,7 @@ section#title::after{
                 .st1{fill:var(--white);}
             }
     
-            svg.whatsapp:hover{
+            svg.whatsapp.hovering{
                 .green{fill: var(--white)}
                 .white{fill: var(--white)}
                 .blue{fill: var(--navy-blue)}
@@ -1379,7 +1380,7 @@ section#title::after{
                 .white{fill: var(--white)}
             }
     
-            svg.linkedin:hover{
+            svg.linkedin.hovering{
                 circle{fill: var(--white)}
                 g g{
                     rect, path, circle{
@@ -1429,7 +1430,7 @@ section#title::after{
         }
     }
 
-    .card:hover{
+    .card.hovering{
         background-color: rgba(140, 220, 255, 0.2);
         
     }
@@ -1485,14 +1486,14 @@ section#title::after{
         p{
             font-size: calc(var(--f-nav-item)*1.25);
         }
-    }#see-more:hover{
+    }#see-more.hovering{
         background-color: var(--white);
         border-color: var(--navy-blue);
         color: var(--navy-blue);
     }
 
     
-    .row:hover{
+    .row.hovering{
         border-color: var(--light-blue);
         transition: all 100ms ease-in-out;
         color: var(--light-blue);
@@ -2235,7 +2236,7 @@ section#title::after{
                 transform: scale(1);
             }
 
-            button:hover{
+            button.hovering{
                 background-color: transparent;
                 border: none;
                 opacity: 0.6;
