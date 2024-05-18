@@ -1239,7 +1239,7 @@ section#title::after{
         }
     }
 
-    .container#my-experience, .container#education-and-certificates{
+    .container#recent-experience, .container#education-and-certificates{
         border-block: 1px solid var(--white);
         .row{
             border-block: 1px solid var(--white);
@@ -1504,7 +1504,7 @@ section#title::after{
     }
     .row.active{
         .answer{
-            max-height: 20vh;
+            max-height: 33vh;
             padding-top: 2%;
         }
         svg{
@@ -1635,7 +1635,7 @@ section#title::after{
         h1{top: 35%;}
     }
     #about-page{
-        .container#my-experience, .container#education-and-certificates{
+        .container#recent-experience, .container#education-and-certificates{
             .row{
                 p{
                     font-size: calc(var(--f-nav-item)*1.15);
@@ -1841,7 +1841,7 @@ section#title::after{
             }
         }
 
-        .container#my-experience, .container#education-and-certificates{
+        .container#recent-experience, .container#education-and-certificates{
             .row{
                 gap: 6%;
                 p{
@@ -2110,7 +2110,7 @@ section#title::after{
             }
         }
 
-        .container#my-experience, .container#education-and-certificates{
+        .container#recent-experience, .container#education-and-certificates{
             .row{
                 grid-template-columns: 8fr 3fr;
                 grid-template-areas: "p d" "l d";
@@ -2197,6 +2197,7 @@ section#title::after{
         }
         .row.active{
             .answer{
+                max-height: 43vh;
                 padding-top: 3%;
             }
         }
@@ -2332,7 +2333,7 @@ section#title::after{
             
         }
 
-        .container#my-experience, .container#education-and-certificates{
+        .container#recent-experience, .container#education-and-certificates{
             border-block: 0.5px solid var(--white);
             .row{
                 padding: 4%;
@@ -2402,7 +2403,7 @@ section#title::after{
         .row.active{
             .answer{
                 padding-top: 5%;
-                max-height: 40vh;
+                max-height: 53vh;
             }
         }
     }
@@ -2415,7 +2416,7 @@ section#title::after{
                 font-size: calc(var(--f-nav-item)/1.5);
             }   
         }
-        .container#my-experience, .container#education-and-certificates{
+        .container#recent-experience, .container#education-and-certificates{
             .row{
                 p.location{
                     font-size: calc(var(--f-nav-item)*0.7);

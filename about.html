@@ -45,16 +45,16 @@
         <div class="nav lato-regular-italic">
             <a href="#my-story" class="hoverable my-story active">My Story</a>
             <a href="#what-i-do" class="hoverable what-i-do">What I Do</a>
-            <a href="#my-experience" class="hoverable my-experience">My Experience</a>
+            <a href="#recent-experience" class="hoverable recent-experience">Recent Experience</a>
             <a href="#education-and-certificates" class="hoverable education-and-certificates">Education&<br/>Certificates</a>
         </div>
 
         <div class="container" id="my-story">
             <img src="./assets/Mario.jpg" alt="">
             <p class="lato-light">
-                Hello! I'm Mario Abboud a clinical psychologist, psychotherapist, psychoanalyst licensed to practice in Lebanon by the Ministry of Public Health, member of the Lebanese Order of Psychologists (LOPsy), and Lebanese Forum of the Lacanian Field (FCLL).
-                <br/>I gained my experience by working in a range of psychological interventions and therapeutic environments with diverse communities and age groups.
-                <br/>Passionate about the psychoanalytic theory and it's understanding of the mind and unconscious, I offer a safe space to further explore their own subjectivity
+                Hello! I'm Mario Abboud, a clinical psychologist, psychotherapist, and psychoanalyst licensed to practice in Lebanon by the Ministry of Public Health. I am a proud member of the Lebanese Order of Psychologists (LOPsy) and the Lebanese Forum of the Lacanian Field (FCLL).
+                <br/>With over 8 years of experience, I have honed my skills through a diverse range of psychological interventions in NGOs, INGOs, schools, mental health centers, and private clinics. Working with various target groups and addressing a wide array of problematics, I have gained valuable insights and expertise in supporting individuals across different communities and age groups.
+                <br/>Passionate about psychoanalytic theory and its profound understanding of the mind and unconscious, I strive to provide a safe and nurturing space for individuals to delve deeper into their own subjectivity. My journey in the field of psychology has been shaped by a commitment to fostering growth, healing, and self-discovery in those I work with. I look forward to accompanying you on your path towards personal transformation and well-being.
 
             </p>
         </div>
@@ -64,16 +64,22 @@
 
         </div>
 
-        <div class="container lato-light hidden" id="my-experience">
+        <div class="container lato-light hidden" id="recent-experience">
+            
             <div class="row">
                 <p class="position">CONSULTANT - STAFF PSYCHOLOGIST</p>
                 <p class="location">Médecins Sans Frontières (MSF) </p>
-                <p class="date">PRESENT</p>
+                <p class="date">2022 - PRESENT</p>
+            </div>
+            <div class="row">
+                <p class="position">PSYCHOTHERAPIST - PSYCHOANALYST</p>
+                <p class="location">Private Clinic</p>
+                <p class="date">2019 - PRESENT</p>
             </div>
             <div class="row">
                 <p class="position">CONSULTANT - PHYCHOTHERAPIST</p>
                 <p class="location">International Medical Corps (IMC) Ghaze, Bekaa & Baalbeck PHCs</p>
-                <p class="date">PRESENT</p>
+                <p class="date">2019 - PRESENT</p>
             </div>
             <div class="row">
                 <p class="position">CONSULTANT - PSYCHOTHERAPIST</p>
@@ -85,18 +91,18 @@
                 <p class="location">University Of Balamand</p>
                 <p class="date">2020 - 2022</p>
             </div>
+            <div class="row">
+                <p class="position">CONSULTANT - PSYCHOTHERAPIST</p>
+                <p class="location">Médecins Sans Frontières (MSF), Beirut Port Explosion & Emergency Response</p>
+                <p class="date">2020</p>
+            </div>
         </div>
 
         <div class="container lato-light hidden" id="education-and-certificates">
             <div class="row">
-                <p class="position">BACHELORS IN CLINICAL PSYCHOLOGY</p>
-                <p class="location">University Of Balamand</p>
-                <p class="date">0000</p>
-            </div>
-            <div class="row">
                 <p class="position">MASTERS IN CLINICAL PSYCHOLOGY</p>
                 <p class="location">University Of Balamand</p>
-                <p class="date">0000</p>
+                <p class="date">2019</p>
             </div>
             <div class="row">
                 <p class="position">LICENSED TO PRACTICE</p>
@@ -109,14 +115,19 @@
                 <p class="date">NO: 455/2022</p>
             </div>
             <div class="row">
-                <p class="position">FORMATION IN PSYCHOANALYTIC PSYCHOTHERAPY</p>
-                <p class="location">????</p>
-                <p class="date">????</p>
-            </div>
-            <div class="row">
                 <p class="position">MEMBER OF FCLL</p>
                 <p class="location">Forum Du Champ Lacanien Du Liban</p>
-                <p class="date">????</p>
+                <p class="date">2017 - PRESENT</p>
+            </div>
+            <div class="row">
+                <p class="position">FORMATION IN PSYCHOANALYTIC PSYCHOTHERAPY</p>
+                <p class="location">BEING Center</p>
+                <p class="date">2016 - 2019</p>
+            </div>
+            <div class="row">
+                <p class="position">BACHELORS IN CLINICAL PSYCHOLOGY</p>
+                <p class="location">University Of Balamand</p>
+                <p class="date">2016</p>
             </div>
         </div>
     </section>
@@ -246,7 +257,7 @@
             const containers = document.querySelectorAll('#about-page .container')
             let sectionName = window.location.hash.split('#')[1];
 
-            if(!['my-story', 'what-i-do', 'my-experience', 'education-and-certificates'].includes(sectionName)){
+            if(!['my-story', 'what-i-do', 'recent-experience', 'education-and-certificates'].includes(sectionName)){
                 window.location.hash = 'my-story'
             }
 

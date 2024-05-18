@@ -48,17 +48,17 @@
         </picture>
         <div class="text">
             <h1 class="headline">Your Path To Clarity And Growth Starts Here.</h1>
-            <p class="sub-headline lato-light">Through personalized therapy and psychoanalysis approaches, I guide you to explore your emotions, thoughts, and behaviors, helping you better understand yourself.</p>
+            <p class="sub-headline lato-light">Through personalized therapy and psychoanalytic approaches, I guide you to explore your emotions, thoughts, and behaviors, helping you better understand yourself and psyche.</p>
             <button type="button" class="btn-lg btn-secondary hoverable"><p>Book A Session</p> <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg></button>
         </div>
         <div class="wrapper">
             <div class="experience lato-light">
                 <div class="wrapper">
-                    <p class="big ">000</p>
-                    <p class="small">People Treated</p>
+                    <p class="big"><span>6500</span>+</p>
+                    <p class="small">Sessions Provided</p>
                 </div>
                 <div class="wrapper">
-                    <p class="big">7+</p>
+                    <p class="big"><span>8</span>+</p>
                     <p class="small">Years Of Experience</p>
                 </div>
             </div>
@@ -134,12 +134,12 @@
                 <p class="txt">Certified</p>
             </div>
             <div class="wrapper years">
-                <p class="num lato-bold"><span>7</span>+</p>
+                <p class="num lato-bold"><span>8</span>+</p>
                 <p class="txt">Years Of Experience</p>
             </div>
             <div class="wrapper helped">
-                <p class="num lato-bold"><span>123</span>+</p>
-                <p class="txt">People Helped</p>
+                <p class="num lato-bold"><span>6500</span>+</p>
+                <p class="txt">Sessions Provided</p>
             </div>
         </div>
         
@@ -315,8 +315,6 @@
         </div>
     </footer>
 
-
-
     <script>
         const blob = document.getElementById("blob")
         const servicesContainer = document.querySelector('#services .container')
@@ -368,7 +366,18 @@
         let heroTl = gsap.timeline()
         heroTl.from('header', {opacity: 0, y: "-100%", duration: 1}, 0.5)
         heroTl.from('#hero .text', { y: "30%", duration: 1}, 0)
-        heroTl.from('#hero .wrapper .wrapper', { x: "50%", duration: 1, stagger: {each: 0.5}}, 0)
+        heroTl.from('#hero .wrapper .wrapper:first-of-type .big span', {
+            textContent: 0,
+            duration: 2,
+            ease: Power1.easeIn,
+            snap: { textContent: 1 }
+        }, 0)
+        heroTl.from('#hero .wrapper .wrapper:last-of-type .big span', {
+            textContent: 0,
+            duration: 1,
+            ease: Power1.easeIn,
+            snap: { textContent: 1 }
+        }, 0)
         heroTl.from("#hero .wrapper img", {transform: "translateY(100%)", duration: 0.75}, 0.75)
 
         if(window.innerWidth/window.innerHeight > 1.3){
