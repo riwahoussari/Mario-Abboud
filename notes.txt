@@ -1,0 +1,77 @@
+//what is technical seo and why is it important? - 4.1. seo course by ahrefs
+s̶e̶t̶u̶p̶ r̶o̶b̶o̶t̶s̶.̶t̶x̶t̶
+s̶e̶t̶u̶p̶ s̶i̶t̶e̶m̶a̶p̶.̶x̶m̶l̶
+s̶e̶t̶u̶p̶ c̶o̶n̶o̶n̶i̶c̶a̶l̶ t̶a̶g̶s̶
+
+
+//technical seo best practices for beginner - 4.2 seo course by ahrefs
+improve page speed (cache content - c̶o̶m̶p̶r̶e̶s̶s̶ i̶m̶a̶g̶e̶s̶ (̶s̶h̶o̶r̶t̶ p̶i̶x̶e̶l̶)̶)
+run website audits with ahrefs webmaster tool (after launch)
+
+//HTTP vs. HTTPS: How SSL/TLS Encryption Works
+get domain validation (DV) (SSL/TLS certificate)
+
+//Core Web Vitals: How to Optimize Them for SEO (LCP - CLS - FID)
+tools: pagespeed insights - google search console (field data) - awt
+basic page speed optimizations : caching - hosting - i̶m̶g̶ c̶o̶m̶p̶r̶e̶s̶s̶i̶o̶n̶ a̶n̶d̶ l̶a̶z̶y̶ l̶o̶a̶d̶i̶n̶g̶ - setup a cdn
+
+fix issues in PageSpeed Insights
+
+common causes of poor LCP : 
+    slow server response time (better hosting)
+    render-blocking JS and compress
+    slow resource load time (i̶m̶g̶ c̶o̶m̶p̶r̶e̶s̶s̶i̶o̶n̶ -̶ l̶a̶z̶y̶ l̶o̶a̶d̶ - cdn)
+    client-side rendering (caching)
+
+    Optimizing the Rendering Process
+        images (already mentioned stuff + preloading)
+        CSS (minify - remove unused css - defer non-critical css - move unused css to the page that needs it )
+        JS (minify - remove non-critical js - defer - async)
+
+common causes for poor CLS :
+    images without dimensions
+    ads, embeds, iframes without dimensions
+    dynamically injected content (random popups)
+    fonts and styles applied too late in the code 
+    tool (webpagetest.org)
+
+Types of interaction (in FID):
+    clicking a link or button 
+    inputting text int a black field
+    selection a drop-down menu
+
+common causes of poor FID :
+    heavy js execution
+
+    optimations: 
+        break up long tasks
+        optimize your page for interaction readiness
+        use a web worker
+        reduce js execution time
+    
+    types of interactions:
+        clicking a link or button 
+        inputting text int a black field
+        selection a drop-down menu
+
+
+
+//for launch
+submit sitemap.xml in google search console and bing webmasters tool 
+setup 301 redirects from www to non-www pages
+
+
+
+
+
+
+
+i̶m̶a̶g̶e̶s̶ a̶l̶t̶ t̶e̶x̶t̶ a̶n̶d̶ n̶a̶m̶i̶n̶g̶
+p̶a̶g̶e̶ t̶i̶t̶l̶e̶
+m̶e̶t̶a̶ d̶e̶s̶c̶r̶i̶p̶t̶i̶o̶n̶
+
+
+Resources:
+preloading article: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbU1wd1NhUW1ORDJpb2JqVGV0X2xPR202ZERld3xBQ3Jtc0ttOWFfVjJuRGVCSnBzM1NQZUI1dmpUYnl3SlFFRmpQamw1X1NCT1c0Q1M4dGl4bHlRTG9zYW5jb2QtVzNIc0ZhNjhNZ0Q3Q1VMM2JXUnd5b1lMVFZJTUpmM25lZ2dSVThhR25XN2d6bmxSYnZMR0NSWQ&q=https%3A%2F%2Fweb.dev%2Fpreload-responsive-images%2F&v=LCZzLmIp0H0
+Optimizing CLS: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazV6RzBvLVZ5dm1Obk5MRVlNT0VmS1ZvUFVXUXxBQ3Jtc0ttQmtpbHF2X21KNmNQOVBEU25GUlpUUXN0QWEycXU0bDVMc01LQndmMFdKalg5Q2pnRkdPY2pUWWxOZl84VVNpVVNmWFg5akd2cnczVUJrWjdGdTRKb2k2SGU0TFdxUmdQV0VMLVpZSXpQZXQtN3R0dw&q=https%3A%2F%2Fweb.dev%2Foptimize-cls%2F&v=LCZzLmIp0H0
+Optimizing FID: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHZSVDdYeU1HVEIwNTlaNzRKalkyeGJCaHBLQXxBQ3Jtc0trX3EyYjUtRzZvRXpseFRVQ3YxcGFKX3ZjUGJrMk00bEJjdGJyX1A1cDdXMS1UOS04UFVfV1RHRk8yQnZnT2xVNTE0V25pQXZpV2wwbG80b2tWbXVWUGtzeDhEdExZV1hKb2VfTkRUaTE5RW5GcGI3TQ&q=https%3A%2F%2Fweb.dev%2Foptimize-fid%2F&v=LCZzLmIp0H0
