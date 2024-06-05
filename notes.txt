@@ -54,7 +54,7 @@ common causes of poor FID :
         inputting text int a black field
         selection a drop-down menu
 
-add favicon resolutions: 64 96 128 192
+a̶d̶d̶ f̶a̶v̶i̶c̶o̶n̶ r̶e̶s̶o̶l̶u̶t̶i̶o̶n̶s̶:̶ 6̶4̶ 9̶6̶ 1̶2̶8̶ 1̶9̶2̶
 
 //for launch
 submit sitemap.xml in google search console and bing webmasters tool 
