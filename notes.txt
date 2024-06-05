@@ -5,7 +5,7 @@ s̶e̶t̶u̶p̶ c̶o̶n̶o̶n̶i̶c̶a̶l̶ t̶a̶g̶s̶
 
 
 //technical seo best practices for beginner - 4.2 seo course by ahrefs
-improve page speed (cache content - c̶o̶m̶p̶r̶e̶s̶s̶ i̶m̶a̶g̶e̶s̶ (̶s̶h̶o̶r̶t̶ p̶i̶x̶e̶l̶)̶)
+i̶m̶p̶r̶o̶v̶e̶ p̶a̶g̶e̶ s̶p̶e̶e̶d̶ (cache content - c̶o̶m̶p̶r̶e̶s̶s̶ i̶m̶a̶g̶e̶s̶ (̶s̶h̶o̶r̶t̶ p̶i̶x̶e̶l̶)̶)
 run website audits with ahrefs webmaster tool (after launch)
 
 //HTTP vs. HTTPS: How SSL/TLS Encryption Works
@@ -15,18 +15,18 @@ get domain validation (DV) (SSL/TLS certificate)
 tools: pagespeed insights - google search console (field data) - awt
 basic page speed optimizations : caching - hosting - i̶m̶g̶ c̶o̶m̶p̶r̶e̶s̶s̶i̶o̶n̶ a̶n̶d̶ l̶a̶z̶y̶ l̶o̶a̶d̶i̶n̶g̶ - setup a cdn
 
-fix issues in PageSpeed Insights
+f̶i̶x̶ i̶s̶s̶u̶e̶s̶ i̶n̶ P̶a̶g̶e̶S̶p̶e̶e̶d̶ I̶n̶s̶i̶g̶h̶t̶s̶
 
 common causes of poor LCP : 
     slow server response time (better hosting)
-    render-blocking JS and compress
+    r̶e̶n̶d̶e̶r̶-̶b̶l̶o̶c̶k̶i̶n̶g̶ J̶S̶ a̶n̶d̶ c̶o̶m̶p̶r̶e̶s̶s̶
     slow resource load time (i̶m̶g̶ c̶o̶m̶p̶r̶e̶s̶s̶i̶o̶n̶ -̶ l̶a̶z̶y̶ l̶o̶a̶d̶ - cdn)
     client-side rendering (caching)
 
     Optimizing the Rendering Process
         images (already mentioned stuff + preloading)
-        CSS (minify - remove unused css - defer non-critical css - move unused css to the page that needs it )
-        JS (minify - remove non-critical js - defer - async)
+        C̶S̶S̶ (m̶i̶n̶i̶f̶y̶ -̶ r̶e̶m̶o̶v̶e̶ u̶n̶u̶s̶e̶d̶ c̶s̶s̶ -̶ d̶e̶f̶e̶r̶ n̶o̶n̶-̶c̶r̶i̶t̶i̶c̶a̶l̶ c̶s̶s̶ -̶ m̶o̶v̶e̶ u̶n̶u̶s̶e̶d̶ c̶s̶s̶ t̶o̶ t̶h̶e̶ p̶a̶g̶e̶ t̶h̶a̶t̶ n̶e̶e̶d̶s̶ i̶t̶ )
+        J̶S̶ (m̶i̶n̶i̶f̶y̶ -̶ r̶e̶m̶o̶v̶e̶ n̶o̶n̶-̶c̶r̶i̶t̶i̶c̶a̶l̶ j̶s̶ -̶ d̶e̶f̶e̶r̶ -̶ a̶s̶y̶n̶c̶)
 
 common causes for poor CLS :
     images without dimensions
@@ -54,7 +54,7 @@ common causes of poor FID :
         inputting text int a black field
         selection a drop-down menu
 
-
+add favicon resolutions: 64 96 128 192
 
 //for launch
 submit sitemap.xml in google search console and bing webmasters tool 
