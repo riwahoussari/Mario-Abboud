@@ -22,7 +22,7 @@ const hoverables = document.querySelectorAll('.hoverable');
 hoverables.forEach(item => {
     item.addEventListener('touchstart', function () {
         item.classList.add('hovering');
-    });
+    }, {passive: true});
 
     item.addEventListener('touchend', function () {
         setInterval(() => {
