@@ -357,6 +357,7 @@
             document.querySelector('#about svg.check').setAttribute("width", document.querySelector('#about p.num').clientHeight)
         }
         window.addEventListener('resize', positionBlob)
+        document.addEventListener('DOMContentLoaded', positionBlob)
         positionBlob()
     </script>
 
