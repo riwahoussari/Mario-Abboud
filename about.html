@@ -9,6 +9,11 @@
     <meta name="description" content="I'm a Licensed psychologist and psychoanalyst in Lebanon with 8+ years of experience offering therapy services for personal growth and well-being">
 
     <link rel="stylesheet" href="styles.css">
+    <script>
+        if(!['my-story', 'what-i-do', 'recent-experience', 'education-and-certificates'].includes(window.location.hash.split('#')[1])){
+            window.location.hash = 'my-story'
+        }
+    </script>
 </head>
 <body class="lato-regular"> 
     <header>
