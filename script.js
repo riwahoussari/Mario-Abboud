@@ -19,7 +19,6 @@ document.addEventListener('click', e => {
 
 // JavaScript to handle touch events and simulate hover
 const hoverables = document.querySelectorAll('.hoverable');
-
 hoverables.forEach(item => {
     item.addEventListener('touchstart', function () {
         item.classList.add('hovering');
@@ -50,6 +49,91 @@ hoverables.forEach(item => {
     });
 
 });
+
+//header blur on scroll
+const wave = document.querySelector('section#title img.svg') || null
+const header = document.querySelector('header')
+
+if(wave){
+    window.addEventListener('scroll', () => {
+        let top = wave.getBoundingClientRect().top
+        
+        if(top <= 0){
+            header.classList.add('blur')
+        }else{
+            header.classList.remove('blur')
+        }
+    })
+
+}
+
+//form message submission
+const footerForm = document.querySelector('footer form')
+footerForm.addEventListener('submit', e => submitForm(e))
+const contactPageForm = document.querySelector('#contact-page form') || null
+if(contactPageForm){contactPageForm.addEventListener('submit', e => submitForm(e))}
+function submitForm(e){
+    e.preventDefault()
+
+    const formButton = e.target.querySelector('button[type="submit"]')
+    formButton.classList.add('disabled')
+    formButton.setAttribute('type', 'button')
+    
+    let name = e.target.querySelector('input[name="fullName"]').value
+    let phone = e.target.querySelector('input[name="phoneNumber"]').value
+    let mess = e.target.querySelector('textarea').value
+
+    let options = {
+        method : 'POST',
+        headers: {
+        'content-Type': 'application/json',
+        'Authorization': `Bearer EAANsG1BpdpABO2ukAeEB8WS5x7ann8aGw0VbcYgoPyTHKHDmTs7RrGHCxeHQWdjMzAQJyQm5UGgzEhBZB8wonjKb9Vq0A7XOlQUezE9hKZA5OyG2fBeSyLMeSGYBDRAQYnBZCHA2tFrNZAJIpQZAggKixSFLEYIisZA7EdQBcCCEFevVZAsZBMHD6SulUamhsdZAl`,
+        },
+        body : JSON.stringify({
+            "messaging_product": "whatsapp", 
+            "to": "+96176370374", 
+            "type": "template", 
+
+            "template": { 
+                        "name": "name_contactmethod_message",
+                        "language": {"code": "en_US"},
+                        "components": [
+                            {
+                                "type": "body",
+                                "parameters": [
+                                    { "type": "text", "text": `${name}` },
+                                    { "type": "text", "text": `${phone}` },
+                                    { "type": "text", "text": `${mess}` }
+                                ]
+                            }
+                        ]
+                    }
+        })
+    };
+
+    fetch("https://graph.facebook.com/v19.0/184354061432356/messages", options)
+    .then(response => response.json())
+    .then(data => {
+        if(data.messages[0].message_status == 'accepted'){
+            alert('Thank You For Your Message! \n Will get back to you as soon as possible :)')
+        }
+        else{ throw new Error ('message_status not accepted')}
+
+        e.target.querySelector('input[name="fullName"]').value = ''
+        e.target.querySelector('input[name="phoneNumber"]').value = ''
+        e.target.querySelector('textarea').value = ''
+
+        formButton.classList.remove('disabled')
+        formButton.setAttribute('type', 'submit')
+    })
+    .catch(error => {
+        alert(':( Oops! There was a problem sending your message. \nPlease contact me by a different method!')
+        
+        formButton.classList.remove('disabled')
+        formButton.setAttribute('type', 'submit')
+    });
+    
+}
 
 //EAANsG1BpdpABO2ukAeEB8WS5x7ann8aGw0VbcYgoPyTHKHDmTs7RrGHCxeHQWdjMzAQJyQm5UGgzEhBZB8wonjKb9Vq0A7XOlQUezE9hKZA5OyG2fBeSyLMeSGYBDRAQYnBZCHA2tFrNZAJIpQZAggKixSFLEYIisZA7EdQBcCCEFevVZAsZBMHD6SulUamhsdZAl
 
