@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - 404</title>
+    <meta name="description" content="The page you are looking for does not exist. Please return to the homepage.">
+    <link rel="canonical" href="https://psymarioabboud.com/404">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .container{
+            position: absolute;
+            font-family: sans-serif;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            
+            .num{
+                font-size: calc(var(--f-headline)*3);
+                font-weight: 400;
+                opacity: 0.8;
+            }
+            .page-not-found{
+                font-weight: lighter;
+                font-style: italic;
+                opacity: 0.6;
+                font-size: calc(var(--f-headline)*0.4);
+                margin-top: -5%;
+            }
+            button{
+                margin-top: 5%;
+                border-color: white;
+                color: white;
+                gap: calc(var(--pi-btn-lg) / 4);
+                padding-inline-start: calc(var(--pi-btn-lg) / 1.25);
+                svg{
+                    transform: rotate(180deg);
+                    fill: white;
+                }
+            }button:hover{
+                background-color: var(--light-blue);
+                border-color: var(--light-blue);
+                color: white;
+                transition: 150ms;
+
+                svg{
+                    transform: rotate(180deg) translateX(25%);
+                }
+            }
+            .redirect{
+                margin-top: 15%;
+                margin-bottom: 3%;
+                font-size: calc(var(--f-headline)*0.4);
+                opacity: 0.7;
+                color: var(--light-blue);
+            }#countdown{
+                font-size: var(--f-headline);
+                color: var(--light-blue);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="num">404</p>
+        <p class="page-not-found">The page you're looking for doesn't exist.</p>
+        <a href="./" aria-label="Back Home"><button class="btn-secondary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg><p>Back Home</p></button></a>
+
+        <p class="redirect">You will be redirected home in: </p>
+        <p id="countdown">5</p>
+    </div>    
+
+    <script>
+        
+        let countdownElement = document.getElementById('countdown');
+        let countdownValue = 5;
+
+        const countdownInterval = setInterval(() => {
+            countdownValue--;
+            countdownElement.textContent = countdownValue;
+
+            if (countdownValue <= 0) {
+                clearInterval(countdownInterval);
+                executeFunction();
+            }
+        }, 1000);
+    
+
+        function executeFunction() {
+            window.location.href = "./"
+        }
+
+    </script>
+</body>
+</html>
